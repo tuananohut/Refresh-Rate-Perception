@@ -1,4 +1,4 @@
-# Refresh Rate Perception
+# Refresh Rate Perception – Extended Version
 
 This is a small simulation to explore refresh rate perception.
 
@@ -8,14 +8,22 @@ This program renders at a low real frame rate while simulating movement at a muc
 
 The goal is not scientific accuracy, but to experiment with frame pacing, temporal resolution, and visual perception.
 
-## Acknowledgements 
+## This version adds:
 
-https://youtu.be/pnhJ5SDZpGU?si=fZ6equkOxoF3EgFu
+- Particle collision with Continuous Collision Detection (CCD) to prevent overlap and tunneling
+- Automatic removal of particles leaving the screen
+- On-screen UI toggle with F key, showing current and maximum particle counts
+- Particle count limitation 
 
-https://github.com/tsoding/subframes
+Goal remains to explore motion perception, frame pacing, and visual subframes.
 
-https://x.com/FreyaHolmer/status/1718979996125925494
+## Based on
 
-https://raphlinus.github.io/ui/graphics/2020/09/13/compositor-is-evil.html
+- Tsoding's "subframes" project: [GitHub](https://github.com/tsoding/subframes)
 
-https://raphlinus.github.io/ui/graphics/gpu/2021/10/22/swapchain-frame-pacing.html
+## Acknowledgements
+
+- [Subframes video by Tsoding](https://youtu.be/pnhJ5SDZpGU?si=fZ6equkOxoF3EgFu)
+- [Freya Holmer on refresh rate perception](https://x.com/FreyaHolmer/status/1718979996125925494)
+- [Raphlinus on compositor issues](https://raphlinus.github.io/ui/graphics/2020/09/13/compositor-is-evil.html)
+- [Raphlinus on swapchain frame pacing](https://raphlinus.github.io/ui/graphics/gpu/2021/10/22/swapchain-frame-pacing.html)
