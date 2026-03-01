@@ -12,13 +12,13 @@
 #define MAX_PARTICLES 50
 
 typedef struct {
-    Vector2 *items;
+    Vector2 items[MAX_PARTICLES];
     size_t count;
     size_t capacity;
 } Vector2s;
 
 typedef struct {
-    Color *items;
+    Color items[MAX_PARTICLES];
     size_t count;
     size_t capacity;
 } Colors;
@@ -71,13 +71,10 @@ int main(int argc, char **argv)
     Colors colors = {0};
 
     positions.capacity = MAX_PARTICLES;
-    positions.items = malloc(sizeof(Vector2) * positions.capacity);
 
     velocities.capacity = MAX_PARTICLES;
-    velocities.items = malloc(sizeof(Vector2) * velocities.capacity);
 
     colors.capacity = MAX_PARTICLES;
-    colors.items = malloc(sizeof(Color) * colors.capacity);
 
     float radius = 20.0f;
     int particle_counter = 0;
@@ -180,10 +177,6 @@ int main(int argc, char **argv)
     }
 
     CloseWindow();
-
-    free(positions.items);
-    free(velocities.items);
-    free(colors.items);
-
+    
     return 0;
 }

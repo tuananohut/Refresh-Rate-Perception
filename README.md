@@ -16,7 +16,8 @@ The goal is not scientific accuracy, but to experiment with frame pacing, tempor
 - Sub-stepping & Iterative Solver: Uses multiple solver iterations per frame to handle collisions and stacking stability, replacing complex CCD with a high-frequency discrete approach.
 - Particle Collision: Basic circle-to-circle collision resolution.
 - Screen Bounds: Particles bounce off screen edges with velocity checks to prevent sticking.
-- UI & Controls: - `F`: Toggle UI (shows current/max particle count and physics FPS).
+- UI & Controls:
+  - `F`: Toggle UI (shows current/max particle count and physics FPS).
   - `Left Mouse`: Spawn particles.
 
 ## Implementation Details
@@ -33,3 +34,4 @@ The simulation uses an accumulator approach for time management. Even if the dis
 - [Freya Holmer on refresh rate perception](https://x.com/FreyaHolmer/status/1718979996125925494)
 - [Raphlinus on compositor issues](https://raphlinus.github.io/ui/graphics/2020/09/13/compositor-is-evil.html)
 - [Raphlinus on swapchain frame pacing](https://raphlinus.github.io/ui/graphics/gpu/2021/10/22/swapchain-frame-pacing.html)
+- [Don't use malloc](https://youtu.be/S7TPgGCZdeU?si=Ewy5U-5hGOpNlE6K)
