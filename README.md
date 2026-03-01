@@ -1,6 +1,6 @@
 # Refresh Rate Perception
 
-[sim.gif](!sim.gif)
+![sim.gif](sim.gif)
 
 This is a small simulation to explore refresh rate perception.
 
